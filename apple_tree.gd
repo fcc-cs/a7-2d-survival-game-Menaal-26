@@ -15,6 +15,7 @@ func _process(delta):
 		if player_in_area:
 			if Input.is_action_just_pressed("e"):		#picked apple
 				state = "no apples"
+				drop_apple()
 
 func _on_pickable_area_body_entered(body):
 	if body.has_method("player"):
@@ -27,7 +28,6 @@ func _on_pickable_area_body_exited(body):
 func _on_growth_timer_timeout():
 	if state == "no apples":
 		state = "apples" 
-		print("timer works")
 
 func drop_apple():
 	var apple_instance = apple.instantiate()
