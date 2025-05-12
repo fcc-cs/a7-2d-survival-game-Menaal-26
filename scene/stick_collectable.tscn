@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cu5aotf3e5i4i"]
 
-[ext_resource type="Script" uid="uid://cj05ginilhsqu" path="res://stick_collectable.gd" id="1_f5yaw"]
+[ext_resource type="Script" uid="uid://cj05ginilhsqu" path="res://script/stick_collectable.gd" id="1_f5yaw"]
 [ext_resource type="Texture2D" uid="uid://do1bb70e2qyya" path="res://assets/stick-icon.png" id="2_775jo"]
 [ext_resource type="Resource" uid="uid://cfoe1l6tlvg43" path="res://inventory/items/stick.tres" id="2_sarkd"]
 

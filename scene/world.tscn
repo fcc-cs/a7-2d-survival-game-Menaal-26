@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dyx402ssljywq"]
+[gd_scene load_steps=14 format=3 uid="uid://dyx402ssljywq"]
 
 [ext_resource type="PackedScene" uid="uid://d38nvdx5atwm8" path="res://scene/player.tscn" id="1_pjass"]
 [ext_resource type="Texture2D" uid="uid://cq58w1wt2guj3" path="res://assets/survivalgame-terrian-defult.png" id="2_m5mgf"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ds5exdpc5cgvv" path="res://assets/survivalgame-terrian-water.png" id="5_emkrx"]
 [ext_resource type="PackedScene" uid="uid://t4sk18pdoy0p" path="res://scene/apple_tree.tscn" id="6_0tg4p"]
 [ext_resource type="PackedScene" uid="uid://cu5aotf3e5i4i" path="res://scene/stick_collectable.tscn" id="7_hcb8y"]
+[ext_resource type="PackedScene" uid="uid://qethxgvyy6eu" path="res://scene/slime.tscn" id="8_y3jn2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hcb8y"]
 texture = ExtResource("2_m5mgf")
@@ -342,9 +343,12 @@ position = Vector2(-471, -122)
 position = Vector2(137, 141)
 
 [node name="player" parent="." instance=ExtResource("1_pjass")]
-position = Vector2(33, 178)
+position = Vector2(69, 45)
 
 [node name="collisions" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
 polygon = PackedVector2Array(21, -172, 23, -558, 237, -558, 240, 233, 207, 212, 192, 210, 141, 212, 117, 214, 88, 223, 89, 306, 91, 321, 77, 318, 36, 318, 33, 214, -841, 212, -839, 37, -759, 34, -754, 50, -747, 64, -734, 76, -718, 74, -713, 91, -708, 103, -694, 116, -677, 113, -675, 134, -659, 151, -634, 155, -594, 155, -556, 154, -539, 148, -526, 135, -528, 42, -521, 34, -402, 34, -394, 39, -392, 57, -377, 73, -264, 71, -246, 59, -248, -57, -261, -72, -373, -72, -392, -60, -393, 4, -530, 8, -552, 20, -553, 117, -565, 132, -643, 128, -648, 99, -664, 90, -687, 89, -687, 63, -702, 48, -723, 46, -728, 21, -745, 8, -839, 8, -839, -558, -692, -478, -710, -479, -705, -260, -698, -246, -587, -246, -585, -177, -575, -166, 21, -172, 7, -515, 2, -510, 11, -192, -568, -188, -569, -267, -688, -267, -689, -480, -549, -697, -824, -642, -1004, -602, -1001, -294, -1001, 137, -998, 413, -625, 488, -165, 488, 140, 476, 451, 325, 411, -183, 354, -639, -644, -565, 14, -563)
+
+[node name="slime" parent="." instance=ExtResource("8_y3jn2")]
+position = Vector2(-248, -105)
