@@ -37,6 +37,13 @@ func _process(delta):
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
 			MOVE:
 				move(delta)
+	
+	if Input.is_action_just_pressed("chat"):
+		print("chatting with npc")
+		is_roaming = false
+		is_chatting = true
+		$AnimatedSprite2D.play("idle")
+		
 				
 func choose(array):
 	array.shuffle()
