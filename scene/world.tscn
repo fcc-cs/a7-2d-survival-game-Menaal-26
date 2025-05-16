@@ -335,15 +335,6 @@ position = Vector2(135, -173)
 [node name="apple_tree2" parent="." instance=ExtResource("6_0tg4p")]
 position = Vector2(34, -131)
 
-[node name="stick_collectable" parent="." instance=ExtResource("7_hcb8y")]
-position = Vector2(-43, -78)
-
-[node name="stick_collectable2" parent="." instance=ExtResource("7_hcb8y")]
-position = Vector2(-471, -122)
-
-[node name="stick_collectable3" parent="." instance=ExtResource("7_hcb8y")]
-position = Vector2(137, 141)
-
 [node name="player" parent="." instance=ExtResource("1_pjass")]
 position = Vector2(61, 49)
 
@@ -360,7 +351,18 @@ polygon = PackedVector2Array(-15.2577, -367.468, -10.9357, -377.281, -9.97523, -
 position = Vector2(-248, -105)
 
 [node name="slime2" parent="." instance=ExtResource("8_y3jn2")]
-position = Vector2(172, 36)
+position = Vector2(186, 119)
 
 [node name="npc" parent="." instance=ExtResource("9_7ghph")]
 position = Vector2(-21, 42)
+
+[node name="stick_collectable" parent="." instance=ExtResource("7_hcb8y")]
+position = Vector2(-43, -78)
+
+[node name="stick_collectable2" parent="." instance=ExtResource("7_hcb8y")]
+position = Vector2(-106, -21)
+
+[node name="stick_collectable3" parent="." instance=ExtResource("7_hcb8y")]
+position = Vector2(54, -38)
+
+[connection signal="stick_collected" from="player" to="npc" method="_on_player_stick_collected"]

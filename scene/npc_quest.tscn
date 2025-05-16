@@ -11,6 +11,7 @@ offset_bottom = 40.0
 script = ExtResource("1_dv85n")
 
 [node name="quest1_ui" type="NinePatchRect" parent="."]
+visible = false
 offset_left = -32.0
 offset_top = -65.0
 offset_right = 33.0
