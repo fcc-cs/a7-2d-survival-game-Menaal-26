@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dyx402ssljywq"]
+[gd_scene load_steps=17 format=3 uid="uid://dyx402ssljywq"]
 
 [ext_resource type="PackedScene" uid="uid://d38nvdx5atwm8" path="res://scene/player.tscn" id="1_pjass"]
 [ext_resource type="Texture2D" uid="uid://cq58w1wt2guj3" path="res://assets/survivalgame-terrian-defult.png" id="2_m5mgf"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://cu5aotf3e5i4i" path="res://scene/stick_collectable.tscn" id="7_hcb8y"]
 [ext_resource type="PackedScene" uid="uid://qethxgvyy6eu" path="res://scene/slime.tscn" id="8_y3jn2"]
 [ext_resource type="PackedScene" uid="uid://bgxthsm16m7vt" path="res://scene/npc.tscn" id="9_7ghph"]
+[ext_resource type="PackedScene" uid="uid://tb2ecegpdbw4" path="res://scene/alien.tscn" id="11_na5tu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yur6x"]
 texture = ExtResource("2_m5mgf")
@@ -364,5 +365,8 @@ position = Vector2(-106, -21)
 
 [node name="stick_collectable3" parent="." instance=ExtResource("7_hcb8y")]
 position = Vector2(54, -38)
+
+[node name="alien" parent="." instance=ExtResource("11_na5tu")]
+position = Vector2(53, 567)
 
 [connection signal="stick_collected" from="player" to="npc" method="_on_player_stick_collected"]
